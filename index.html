@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensiversary Ke-13</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="valentines" onclick="toggleCard()">
+            <div class="envelope">
+                <div class="card">
+                    <div class="text">Happy Mensiversary Ke-13<br/>I love you<br/> Milan Fathimah Az Zahra Sandy,</div>
+                </div>
+                <div class="front"></div>
+                <div class="heart"></div>
+                <div class="shadow"></div>
+                <div class="hearts">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                    <div class="four"></div>
+                    <div class="five"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleCard() {
+            const card = document.querySelector('.card');
+            const envelope = document.querySelector('.envelope');
+            card.style.transform = card.style.transform === 'translateY(0)' ? 'translateY(-220px)' : 'translateY(0)';
+            envelope.style.transform = envelope.style.transform === 'rotateX(0)' ? 'rotateX(-180deg)' : 'rotateX(0)';
+        }
+    </script>
+</body>
+</html>
